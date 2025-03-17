@@ -1,0 +1,84 @@
+site_name: Uxopian Products Documentation (UPD)
+
+site_url: https://docs.cross-produits.com
+
+docs_dir: All_docs/docs
+
+theme:
+  name: material
+  font:
+    text: Merriweather Sans
+    code: Red Hat Mono
+  logo: assets/logos/uxopian.png
+  favicon: assets/logos/uxopian.png
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: purple
+      accent: purple
+      toggle:
+        icon: material/lightbulb
+        name: Basculer en mode sombre
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent:  deep purple
+      toggle:
+        icon: material/lightbulb-on-10
+        name: Basculer en mode clair
+  features:
+    - navigation.tabs
+    - navigation.instant.prefetch
+    - toc.integrate
+    - navigation.top
+    - navigation.footer
+
+nav:
+  - Accueil: index.md
+  - Produits:
+      - Arender: 
+        - Home: arender/index.md
+        - Content-Tabs: arender/content-tabs
+        - Admonitions: arender/admonitions.md
+        - Diagrams: arender/diagram-examples.md
+      - Flowerdocs: flowerdocs/index.md
+      - Fast2: fast2/index.md
+  - A Propos:
+      - about.md
+      - contact.md
+      - License: license.md
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ton-repo
+    - icon: simple/youtube
+      link: https://youtube.com/@james-willett
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/firmin-bryant-junior-kaman/
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<bryant.kaman75@gmail.com>
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+
+copyright: Copyright &copy; 2024 - 2025 Bryant Kaman
