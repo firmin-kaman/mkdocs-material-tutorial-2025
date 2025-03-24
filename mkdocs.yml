@@ -49,6 +49,12 @@ nav:
       - License: license.md
 
 extra:
+  version:
+    alias: true
+    provider: mike
+    default: 
+      - stable
+      - development
   generator: false
   social:
     - icon: fontawesome/brands/github
