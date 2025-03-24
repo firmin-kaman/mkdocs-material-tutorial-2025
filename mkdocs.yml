@@ -1,7 +1,5 @@
 site_name: Uxopian Products Documentation (UPD)
-
 site_url: https://docs.cross-produits.com
-
 docs_dir: All_docs/docs
 
 theme:
@@ -22,7 +20,7 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: deep purple
-      accent:  deep purple
+      accent: deep purple
       toggle:
         icon: material/lightbulb-on-10
         name: Basculer en mode clair
@@ -52,10 +50,6 @@ extra:
   version:
     alias: true
     provider: mike
-    default: 
-      - stable
-      - development
-  generator: false
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/ton-repo
@@ -64,7 +58,8 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/firmin-bryant-junior-kaman/
     - icon: fontawesome/solid/paper-plane
-      link: mailto:<bryant.kaman75@gmail.com>
+      link: mailto:bryant.kaman75@gmail.com
+  generator: false
 
 markdown_extensions:
   - attr_list
@@ -86,5 +81,9 @@ markdown_extensions:
       alternate_style: true
   - admonition
   - pymdownx.details
+
+plugins:
+  - search:
+      lang: en
 
 copyright: Copyright &copy; 2024 - 2025 Bryant Kaman
